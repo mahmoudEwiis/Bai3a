@@ -1,8 +1,8 @@
 # Bai3a
 A simple Website made using Angular ⚡
 
-This site is for selling shoes with animation Routing and users can switch between multi-languages
-
+This site is for selling shoes with animation Routing and users can switch between multi-languages<br/>
+Used Language is saved even if the user reloads the page
 
 Deployed it using Netlify [here](https://bai3a.netlify.app/).
 
