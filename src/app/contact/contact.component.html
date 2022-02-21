@@ -1,0 +1,76 @@
+<section class="section contact" [ngClass]="'currentTheme' | translate" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 ">
+                <h4 class="heading  text-md-left">
+                    {{'Questions?' | translate}}<span class="d-block ">{{"Let'sGet In Touch" | translate}}</span>
+                </h4>
+                <div class="contact-details">
+                    <h4 class="heading">{{'Warehouse Location' | translate}}</h4>
+                    <p class="text alt-font">
+                       {{' There are many variations of passages of Lorem Ipsum available, but the majority have suffered.' | translate}}
+                    </p>
+                    <ul>
+                        <li>
+                            <i aria-hidden="true" class="fas fa-map-marker-alt"></i>
+                             {{'123 Park Avenue, New York, United States ' | translate}}
+                        </li>
+                        <li>
+                            <i aria-hidden="true" class="fas fa-phone-volume"></i>
+                            <span>+1 631 1234 5678</span>
+                            <span>+1 631 1234 5678</span>
+                        </li>
+                        <li>
+                            <i aria-hidden="true" class="fas fa-paper-plane"></i>
+                            <span>email@website.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="col-12 col-lg-5 offset-lg-1 section4left  text-center text-lg-left d-flex align-items-center">
+                <form class="row contact-form" id="contact-form-data">
+                    <div class="col-12 col-lg-12" id="result"></div>
+                    <div class="col-12 col-lg-12">
+                        <input type="text" name="userName" placeholder = "{{'Name'| translate}} "class="form-control">
+                        <input type="text" name="userPhone" placeholder="{{'Contact No' | translate}}" class="form-control">
+                        <input type="email" name="userEmail" placeholder="{{'Email' | translate}}" class="form-control">
+                        <textarea class="form-control" name="userMessage" rows="6" placeholder="{{'Type Your Message Here' | translate}}"></textarea>
+                        <a href="javascript:void(0)" class="btn-theme w-100 color-black btn-hvr-up btn-pink btn-hvr-white">
+                            {{'Submit Information' | translate}}
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <div class="social-icons cursor-light" [ngClass]="'currentTheme' | translate">
+        <ul class="list-unstyled">
+            <!-- Facebook -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <!-- Twitter -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <!-- Linkedin -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <!-- Instagram -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>

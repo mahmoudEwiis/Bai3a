@@ -1,0 +1,84 @@
+<!-- Start Products-->
+<section class="section  Products" id="Products" [ngClass]="'currentTheme' | translate">
+    <div class="container">
+        <div class="row align-items-center mb-3 mb-md-5 section-heading" [ngClass]="'currentTheme' | translate">
+            <div class="col-12 col-md-6 ">
+                <h2 class="main-font">{{'Premium' | translate}} <span class="d-block main-color">{{'Shoe Collection' | translate}}</span></h2>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="row my-4 my-md-0">
+                    <!-- Counter -->
+                    <div class="col-12 col-md-4">
+                        <div class="parallax-box text-grey">
+                            <h2 class="count">456</h2>
+                            <h5>{{'Shoes Delivered' | translate}}</h5>
+                        </div>
+                    </div>
+                    <!-- Counter -->
+                    <div class="col-12 col-md-4">
+                        <div class="parallax-box text-grey">
+                            <h2 class="count">560</h2>
+                            <h5>{{'New Articles' | translate}}</h5>
+                        </div>
+                    </div>
+                    <!-- Counter -->
+                    <div class="col-12 col-md-4">
+                        <div class="parallax-box text-grey">
+                            <h2 class="count">786</h2>
+                            <h5>{{'Happy Customers' | translate}}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <owl-carousel-o [options]="customOptions">
+
+            <ng-container *ngFor="let product of products">
+                <ng-template carouselSlide [id]="product.productId">
+                    <!--Item 1-->
+                    <div class="team-box item text-center">
+                        <!--Product Image-->
+                        <div class="team-image">
+                            <img [src]="product.imgPath" [alt]="product.imgAlt">
+                        </div>
+                        <!--Product Text-->
+                        <div class="team-text">
+                            <h5 class="main-font">{{product.productTitle}}</h5>
+                            <a href="javascript:void(0)" class="btn-theme">{{'View Detail' | translate}}</a>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+
+        </owl-carousel-o>
+    </div>
+    <div class="social-icons cursor-light" [ngClass]="'currentTheme' | translate">
+        <ul class="list-unstyled">
+            <!-- Facebook -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+            </li>
+            <!-- Twitter -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <!-- Linkedin -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+            </li>
+            <!-- Instagram -->
+            <li class="d-inline-block">
+                <a class="social-icon" href="javascript:void(0);">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- End Products -->

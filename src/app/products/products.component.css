@@ -1,0 +1,133 @@
+.Products .section-heading h2 {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.Products .section-heading h2 span {
+    color: #ed2d34;
+}
+
+
+
+.team-box {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding: 5px;
+    background-color: #ffffff;
+    -webkit-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+    transition: 0.5s ease;
+    position: relative;
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.team-box .team-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.team-box .team-text {
+    text-align: center;
+    font-size: 14px;
+    padding: 2rem 0 0 0;
+    opacity: 0;
+    transition: .25ms;
+}
+
+.team-box .team-text .btn-medium {
+    font-size: 16px;
+    padding: 8px 36px;
+    cursor: pointer;
+}
+
+::ng-deep.owl-carousel.owl-drag .owl-item.center .item {
+    transform: scale(1.0);
+}
+
+::ng-deep.owl-carousel.owl-drag .owl-item.center .team-box .team-text h5 {
+    font-size: 28px;
+    color: #464646;
+    font-weight: bold;
+}
+
+::ng-deep.owl-carousel.owl-drag .owl-item.center .team-box .team-text {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+::ng-deep.owl-theme .owl-nav [class*=owl-] {
+    color: #464646;
+    font-size: 42px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: transparent;
+    display: inline-block;
+    cursor: pointer;
+}
+
+::ng-deep.owl-theme .owl-nav [class*=owl-]:hover {
+    background: transparent;
+    color: #ed2d34;
+    transition: .5s ease;
+}
+
+::ng-deep.owl-carousel .owl-nav .owl-next {
+    position: absolute;
+    top: 23%;
+    right: -8%;
+}
+
+::ng-deep.owl-carousel .owl-nav .owl-prev {
+    position: absolute;
+    top: 23%;
+    left: -8%;
+}
+
+/* ===================================
+   Media Queries
+====================================== */
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .Products {
+        height: auto;
+    }
+
+    .Products h2 {
+        font-size: 42px;
+    }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .Products {
+        height: auto;
+    }
+    
+    ::ng-deep.owl-theme .owl-nav {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+
+    .Products {
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        background-position-x: -12%;
+    }
+
+    .Products h2 {
+        font-size: 34px;
+    }
+
+    ::ng-deep.owl-theme .owl-nav {
+        display: none;
+    }
+}

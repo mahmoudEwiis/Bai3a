@@ -1,0 +1,377 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+body {
+    overflow: auto;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+@media (min-width:576px) {
+    .container {
+        max-width: 540px
+    }
+}
+
+@media (min-width:768px) {
+    .container {
+        max-width: 720px
+    }
+}
+
+@media (min-width:992px) {
+    .container {
+        max-width: 960px
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1140px
+    }
+}
+
+/* ===================================
+    common stlye
+====================================== */
+.section {
+    background-image: url(assets/images/banner.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 95%;
+    padding-top: 7.6rem;
+    margin-left: 5%;
+}
+
+/* buttons */
+
+.btn-theme {
+    padding: 9px 34px;
+    width: auto;
+    display: inline-block;
+    font-weight: 700;
+    line-height: 25px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+    -webkit-border-radius: 36px;
+    border-radius: 36px;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    border: 3px solid #464646;
+    background-color: transparent;
+    color: #464646;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease !important;
+    text-decoration: none;
+}
+
+
+
+.btn-theme:after {
+    content: '';
+    position: absolute;
+    background-color: #ed2d34;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 100%;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+    z-index: -1;
+}
+
+.btn-theme:hover:after {
+    height: 100%;
+}
+
+.btn-theme:hover {
+    color: #ffffff;
+    border-color: #ed2d34;
+    background-color: #ed2d34;
+
+}
+
+
+/* ===================================
+    social Icon
+====================================== */
+
+
+.social-icons {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 1111;
+}
+
+.social-icons a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    font-size: 18px;
+    color: #000;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 0.1rem;
+    border-radius: 40px;
+    background: transparent;
+    -webkit-transition: all .3s ease !important;
+    -o-transition: all .3s ease !important;
+    transition: all .3s ease !important;
+}
+
+.social-icon:hover {
+    color: #ffffff !important;
+    -webkit-box-shadow: 0 0 15px 30px #ed2d34 inset;
+    box-shadow: 0 0 15px 30px #ed2d34 inset;
+}
+
+@media (max-width: 1200px) and (min-width: 992px) {
+
+    .social-icons {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+
+    .social-icons {
+        display: none;
+    }
+
+}
+
+
+/* ===================================
+    Responsive Menu
+====================================== */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 6;
+    width: 100%;
+    background-color: #ed2d34;
+    padding: 19px 0 0 35px;
+}
+
+.navbar.rtl {
+    padding: 19px 30px 0 35px;
+}
+
+#sidebarCollapse {
+
+    cursor: pointer;
+    transition: .8s ease;
+}
+
+
+#sidebarCollapse .bar {
+    display: block;
+    height: 2px;
+    width: 25px;
+    background-color: #ffffff;
+    margin-bottom: 4px;
+    transition: .7s ease;
+}
+
+#sidebarCollapse:hover span:first-child {
+    width: 16px;
+}
+
+#sidebarCollapse:hover span:last-child {
+    width: 16px;
+}
+
+.navbar-brand .logo {
+    display: block;
+    color: #fff;
+    font-weight: 900;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+/* ===================================
+   Style of Contact in a arbic language
+====================================== */
+
+
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+
+}
+
+.section.rtl {
+    background-image: url(assets/images/reviews_bg.jpg);
+    margin-right: 5%;
+    margin-left: 0;
+}
+
+.social-icons.rtl {
+    direction: ltr;
+    right: calc(95% - 9%);
+}
+
+.social-icons.rtl .contact-details .text {
+    font-size: 25px;
+}
+
+.owl-carousel {
+    direction: ltr !important;
+}
+
+
+/* ===================================
+   Media Queries
+====================================== */
+
+
+
+@media (max-width: 1200px) and (min-width: 992px) {
+    .h1, h1 {
+        font-size: 60px;
+    }
+
+    section {
+        padding: 10rem 0;
+    }
+
+    .navbar {
+        display: flex !important;
+    }
+
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+    .h1, h1 {
+        font-size: 58px;
+    }
+
+    .h3, h3 {
+        font-size: 32px;
+    }
+
+    section {
+        padding: 7.5rem 0;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .navbar {
+        display: flex !important;
+        padding: 0 30px 0 34px;
+    }
+    .navbar.rtl {
+        padding: 0 30px 0 34px;
+    }
+    .navbar-brand {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .social-icons {
+        display: none;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(136, 136, 136, 0.534);
+        border-radius: 7px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    body {
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    section {
+        padding: 5rem 0;
+    }
+    .section{
+        height: auto;
+    }
+    .h1, h1 {
+        font-size: 36px;
+    }
+
+    .h2, h2 {
+        font-size: 36px;
+    }
+
+    .h3, h3 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(136, 136, 136, 0.534);
+        border-radius: 7px;
+    }
+
+}
+
+@media (max-width: 575.98px) {
+    .h1, h1 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgba(136, 136, 136, 0.534);
+        border-radius: 7px;
+    }
+}

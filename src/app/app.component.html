@@ -1,0 +1,24 @@
+<div id="loader" class="preloader">
+    <div class="center">
+        <div class="spinner">
+            <div class="blob top"></div>
+            <div class="blob bottom"></div>
+            <div class="blob left"></div>
+            <div class="blob move-blob"></div>
+        </div>
+    </div>
+</div>
+<main [@myAnimation]="getRouterOutletState(o)">
+    <app-sidenav #sidenav></app-sidenav>
+    <nav class="navbar navbar-light cursor-light d-md-none" [ngClass]="'currentTheme' | translate">
+        <div id="sidebarCollapse" (click)="sidenav.toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <a class="navbar-brand ml-auto" href="#">
+            <h1><a href="#" class="logo">M</a></h1>
+        </a>
+    </nav>
+    <router-outlet #o="outlet"></router-outlet>
+</main>

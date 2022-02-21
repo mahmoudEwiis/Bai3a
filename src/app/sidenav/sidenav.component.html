@@ -1,0 +1,39 @@
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar" class="active" [ngClass]="'currentTheme' | translate">
+        <div id="sidebarCollapse" (click)="toggleSidebar()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <h1><a routerLink="home" class="logo">M</a></h1>
+        <ul class="list-unstyled components mb-5">
+            <li class="active">
+                <a routerLink="home"><span class="fa fa-home"></span> {{'Home' | translate }}</a>
+            </li>
+            <!-- <li>
+                <a routerLink="home"><span class="fa fa-user"></span> About</a>
+            </li> -->
+            <li>
+                <a routerLink="products"><span class="fa fa-box"></span> {{'Products' | translate }}</a>
+            </li>
+            <li>
+                <a routerLink="reviews"><span class="fa  fa-eye"></span>{{'Reviews' | translate }}</a>
+            </li>
+            <!-- <li>
+                <a routerLink="home"><span class="fa fa-sticky-note"></span> {{'Blog' | translate }}</a>
+            </li> -->
+            <!-- <li>
+                <a routerLink="home"><span class="fa fa-cogs"></span> Services</a>
+            </li> -->
+
+            <li>
+                <a routerLink="contact"><span class="fa fa-paper-plane"></span> {{'Contacts' | translate }}</a>
+            </li>
+            <li>
+                <a (click)="changeLanguage($event)" value="ar-EG" href="#" >
+                    <span class="fa fa-language"></span> {{ 'عربي' | translate }}
+                </a>
+            </li> 
+        </ul>
+    </nav>
+</div>
