@@ -4,7 +4,7 @@ A simple Website made using Angular ⚡
 This site is for selling shoes with animation Routing and users can switch between multi-languages<br/>
 Used Language is saved even if the user reloads the page
 
-Deployed it using Netlify [here](https://bai3a.netlify.app/).
+Deployed it using Vercel [here](https://bai3a.vercel.app/).
 
 Please leave a ⭐ as motivation if you liked the implementation 😄
 <br/>
