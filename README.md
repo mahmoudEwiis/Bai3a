@@ -7,7 +7,7 @@ Used Language is saved even if the user reloads the page
 Deployed it using Vercel [here](https://bai3a.vercel.app/).
 
 Please leave a ⭐ as motivation if you liked the implementation 😄
-<br/>
+<br/> 
 <br/>
 
 
