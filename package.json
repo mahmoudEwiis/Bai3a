@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "build": "NODE_OPTIONS=--openssl-legacy-provider ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
@@ -49,5 +49,8 @@
     "ts-node": "~10.5.0",
     "tslint": "~6.1.0",
     "typescript": "~4.5.5"
+  },
+  "engines": {
+    "node": ">=18.x"
   }
 }
