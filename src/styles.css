@@ -12,7 +12,7 @@ body {
     margin-right: auto;
     margin-left: auto;
 
-}
+} 
 
 @media (min-width:576px) {
     .container {
